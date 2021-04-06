@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eGD-5U-S57">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="SsS-iv-dGF">
+            <objects>
+                <navigationController id="81P-Da-Dv1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7Fh-w3-L1l">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NXi-8L-4mr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1447" y="-9"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="YZc-FF-jiP">
+            <objects>
+                <viewController id="eGD-5U-S57" customClass="HomeViewController" customModule="W4_Project1_Gumi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aoZ-qq-9zr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lq0-dQ-Gt8">
+                                <rect key="frame" x="369" y="59" width="30" height="28.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lq0-dQ-Gt8" secondAttribute="height" multiplier="23:22" id="9AO-cW-Z7t"/>
+                                    <constraint firstAttribute="width" constant="30" id="kZA-b0-Qfi"/>
+                                </constraints>
+                                <state key="normal" image="cart"/>
+                                <connections>
+                                    <action selector="cartButtonTapped:" destination="eGD-5U-S57" eventType="touchUpInside" id="cpl-Cn-CK0"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OTj-l1-SEc">
+                                <rect key="frame" x="0.0" y="102.5" width="414" height="759.5"/>
+                                <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="15" minimumInteritemSpacing="15" id="hlS-a4-yOw">
+                                    <size key="itemSize" width="130" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="15" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z50-eS-s32">
+                                <rect key="frame" x="391" y="51" width="16" height="16"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.25882352939999997" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="2rS-3R-VgO"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="16" id="Cwl-DG-Qhj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YSg-JS-bd4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YSg-JS-bd4" firstAttribute="bottom" secondItem="OTj-l1-SEc" secondAttribute="bottom" id="0af-da-qde"/>
+                            <constraint firstItem="lq0-dQ-Gt8" firstAttribute="top" secondItem="YSg-JS-bd4" secondAttribute="top" constant="15" id="5gK-DT-3a6"/>
+                            <constraint firstItem="YSg-JS-bd4" firstAttribute="trailing" secondItem="lq0-dQ-Gt8" secondAttribute="trailing" constant="15" id="Lt3-5A-HXv"/>
+                            <constraint firstItem="OTj-l1-SEc" firstAttribute="leading" secondItem="YSg-JS-bd4" secondAttribute="leading" id="TaY-Nf-UzK"/>
+                            <constraint firstItem="Z50-eS-s32" firstAttribute="trailing" secondItem="lq0-dQ-Gt8" secondAttribute="trailing" constant="8" id="cVI-Ag-lcA"/>
+                            <constraint firstItem="YSg-JS-bd4" firstAttribute="trailing" secondItem="OTj-l1-SEc" secondAttribute="trailing" id="gz2-GW-igG"/>
+                            <constraint firstItem="OTj-l1-SEc" firstAttribute="top" secondItem="lq0-dQ-Gt8" secondAttribute="bottom" constant="15" id="kei-4h-yhV"/>
+                            <constraint firstItem="Z50-eS-s32" firstAttribute="top" secondItem="lq0-dQ-Gt8" secondAttribute="top" constant="-8" id="nux-2P-5JN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="itemCollectionView" destination="OTj-l1-SEc" id="DAU-02-2bh"/>
+                        <outlet property="totalItemInCartLabel" destination="Z50-eS-s32" id="NFt-SS-evW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PMm-vF-PDj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="86"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cart" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

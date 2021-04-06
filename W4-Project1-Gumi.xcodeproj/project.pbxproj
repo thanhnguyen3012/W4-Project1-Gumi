@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		845945A6261BEADA00D292DE /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845945A5261BEADA00D292DE /* UITableViewExtension.swift */; };
 		848E8400261ABBD6001DFF01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E83FF261ABBD6001DFF01 /* AppDelegate.swift */; };
 		848E8402261ABBD6001DFF01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E8401261ABBD6001DFF01 /* SceneDelegate.swift */; };
 		848E8409261ABBD8001DFF01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848E8408261ABBD8001DFF01 /* Assets.xcassets */; };
@@ -24,7 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		845945A5261BEADA00D292DE /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		848E83FC261ABBD6001DFF01 /* W4-Project1-Gumi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "W4-Project1-Gumi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		848E83FF261ABBD6001DFF01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		848E8401261ABBD6001DFF01 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,7 +121,6 @@
 		848E842C261AC477001DFF01 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				845945A5261BEADA00D292DE /* UITableViewExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -223,7 +220,6 @@
 				849CEEFF261AF19C002B5119 /* CartTableViewCell.swift in Sources */,
 				848E8400261ABBD6001DFF01 /* AppDelegate.swift in Sources */,
 				848E8425261AC426001DFF01 /* ItemCollectionViewCell.swift in Sources */,
-				845945A6261BEADA00D292DE /* UITableViewExtension.swift in Sources */,
 				848E842E261AC488001DFF01 /* CommonModel.swift in Sources */,
 				848E8402261ABBD6001DFF01 /* SceneDelegate.swift in Sources */,
 				849CEEFA261AF06F002B5119 /* CartViewController.swift in Sources */,

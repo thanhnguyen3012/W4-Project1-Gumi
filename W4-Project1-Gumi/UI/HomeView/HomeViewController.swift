@@ -6,13 +6,15 @@
 //
 
 import UIKit
+import AVKit
 
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var itemCollectionView: UICollectionView!
     @IBOutlet weak var totalItemInCartLabel: UILabel!
     
-    var listOfItem : [Item] = [ Item(thumbnail: "🫐", name: "Blueberry", price: 87.0, backgroundColor: UIColor(red: 201/255, green: 229/255, blue: 255/255, alpha: 1)),
+    var listOfItem : [Item] = [ Item(thumbnail: "", name: "Strawberry", price: 23.2, backgroundColor: UIColor(red: 1, green: 229/255, blue: 255/255, alpha: 1)),
+                                Item(thumbnail: "🫐", name: "Blueberry", price: 87.0, backgroundColor: UIColor(red: 201/255, green: 229/255, blue: 255/255, alpha: 1)),
                                 Item(thumbnail: "🍑", name: "Peach", price: 35.2, backgroundColor: UIColor(red: 1, green: 211/255, blue: 171/255, alpha: 1)),
                                 Item(thumbnail: "🥑", name: "Avocado", price: 40.5, backgroundColor: UIColor(red: 228/255, green: 1, blue: 158/255, alpha: 1)),
                                 Item(thumbnail: "🥔", name: "Potato", price: 8.3, backgroundColor: UIColor(red: 242/255, green: 232/255, blue: 203/255, alpha: 1)),
@@ -32,6 +34,9 @@ class HomeViewController: UIViewController {
         itemCollectionView.delegate = self
         itemCollectionView.dataSource = self
         itemCollectionView.register(ItemCollectionViewCell.nib, forCellWithReuseIdentifier: ItemCollectionViewCell.identifier)
+        if let layout = itemCollectionView.collectionViewLayout as? CustomCollectionViewFlowLayout {
+            layout.delegate = self
+        }
     }
 
     @IBAction func cartButtonTapped(_ sender: Any) {
@@ -72,10 +77,6 @@ extension HomeViewController: UICollectionViewDataSource {
     }
 }
 
-extension HomeViewController: UICollectionViewDelegate {
-    
-}
-
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -103,5 +104,14 @@ extension HomeViewController: CartViewControllerDelegate {
             listOfItem[i].amount = checkAmountInCart(item: listOfItem[i])
         }
         itemCollectionView.reloadData()
+    }
+}
+
+extension HomeViewController: CustomCollectionViewLayoutDelegate {
+    func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat {
+        if listOfItem[indexPath.row].thumbnail == "" {
+            return 200
+        }
+        return 280
     }
 }

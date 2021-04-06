@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		845945B0261C3F6C00D292DE /* CustomCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845945AF261C3F6C00D292DE /* CustomCollectionViewFlowLayout.swift */; };
 		848E8400261ABBD6001DFF01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E83FF261ABBD6001DFF01 /* AppDelegate.swift */; };
 		848E8402261ABBD6001DFF01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E8401261ABBD6001DFF01 /* SceneDelegate.swift */; };
 		848E8409261ABBD8001DFF01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848E8408261ABBD8001DFF01 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		845945AF261C3F6C00D292DE /* CustomCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		848E83FC261ABBD6001DFF01 /* W4-Project1-Gumi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "W4-Project1-Gumi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		848E83FF261ABBD6001DFF01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		848E8401261ABBD6001DFF01 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		845945AE261C3F3800D292DE /* CustomCollectionViewFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				845945AF261C3F6C00D292DE /* CustomCollectionViewFlowLayout.swift */,
+			);
+			path = CustomCollectionViewFlowLayout;
+			sourceTree = "<group>";
+		};
 		848E83F3261ABBD6001DFF01 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +116,7 @@
 			children = (
 				849CEEF5261AF048002B5119 /* CartView */,
 				848E8416261ABBF8001DFF01 /* HomeView */,
+				845945AE261C3F3800D292DE /* CustomCollectionViewFlowLayout */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -224,6 +235,7 @@
 				848E8402261ABBD6001DFF01 /* SceneDelegate.swift in Sources */,
 				849CEEFA261AF06F002B5119 /* CartViewController.swift in Sources */,
 				848E8419261ABC3C001DFF01 /* HomeViewController.swift in Sources */,
+				845945B0261C3F6C00D292DE /* CustomCollectionViewFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var itemCollectionView: UICollectionView!
     @IBOutlet weak var totalItemInCartLabel: UILabel!
     
-    var listOfItem : [Item] = [ Item(thumbnail: "", name: "Strawberry", price: 23.2, backgroundColor: UIColor(red: 1, green: 229/255, blue: 255/255, alpha: 1)),
+    var listOfItem : [Item] = [ Item(thumbnail: "😢", name: "Strawberry", price: 23.2, backgroundColor: UIColor(red: 1, green: 229/255, blue: 255/255, alpha: 1)),
                                 Item(thumbnail: "🫐", name: "Blueberry", price: 87.0, backgroundColor: UIColor(red: 201/255, green: 229/255, blue: 255/255, alpha: 1)),
                                 Item(thumbnail: "🍑", name: "Peach", price: 35.2, backgroundColor: UIColor(red: 1, green: 211/255, blue: 171/255, alpha: 1)),
                                 Item(thumbnail: "🥑", name: "Avocado", price: 40.5, backgroundColor: UIColor(red: 228/255, green: 1, blue: 158/255, alpha: 1)),
